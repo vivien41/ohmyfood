@@ -262,7 +262,46 @@ body {
         100% {
                   opacity: 1;
         }
-      }   
+      }
+
+      .appears-with-opacity {
+	    animation: opacity 2s both;
+}
+    #case-1 {
+        animation-delay: 0.2s;
+    }
+    
+    #case-2 {
+        animation-delay: 0.3s;
+    }
+    
+    #case-3 {
+        animation-delay: 0.4s;
+    }
+    
+    #case-4 {
+        animation-delay: 0.5s;
+    }
+    
+    #case-5 {
+        animation-delay: 0.6s;
+    }
+    
+    #case-6 {
+        animation-delay: 0.7s;
+    }
+    
+    #case-7 {
+        animation-delay: 0.8s;
+    }
+    
+    #case-8 {
+        animation-delay: 0.9s;
+    }
+    
+    #case-9 {
+        animation-delay: 0.10s;
+    }   
     .footer {
         width: 100%;
         background-color: #353535;
