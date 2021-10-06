@@ -4,14 +4,14 @@
     align-items: center;
 }
 
-@mixin button-hover {
+@mixin bouton-hover {
     opacity: 0.8;
     cursor: pointer;
     transition: .3s;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
 }
 
-@mixin button-style {
+@mixin bouton-style {
     opacity: 1;
     background: $gradient;
     color: white;
@@ -43,7 +43,30 @@ body {
     @include flexbox-center;
     flex-direction: column;
 }
-
+.loader {
+        height: 100%;
+        background: white;
+        margin: auto;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        animation: loader 3s linear ;
+        visibility: hidden;
+        &__border {
+            @include flexbox-center;
+            border: 20px solid transparent;
+            border-top: 20px solid $color-primary;
+            border-bottom: 20px solid $color-secondary;
+            border-right: 20px solid $color-tertiary;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            animation: loader-border 3s linear ;
+            visibility: hidden;
+        }
+}
 .header {
     box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
     position: relative;
@@ -54,6 +77,34 @@ body {
         font-family: 'Shrikhand', cursive;
         margin: 0;
         color: black;
+    }
+}
+@keyframes loader {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes loader-border {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
@@ -286,3 +337,15 @@ body {
         }
     }
 }
+
+    .footer {
+        &__bloc {
+            margin-bottom: 15px;
+            &-links {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                max-width: 900px;
+            }
+        }
+    }
