@@ -29,6 +29,7 @@ body {
   -webkit-animation: loader 3s linear;
           animation: loader 3s linear;
   visibility: hidden;
+  z-index: 20;
 }
 
 .loader__border {
@@ -56,11 +57,12 @@ body {
   bottom: 0;
   -webkit-animation: loader-border 3s linear;
           animation: loader-border 3s linear;
+  z-index: 10;
   visibility: hidden;
 }
 
 .header {
-  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.7);
   position: relative;
   display: flex;
   justify-content: center;
