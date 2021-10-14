@@ -19,7 +19,7 @@ body {
 }
 .loader {
   height: 100%;
-  background: white;
+  background: black;
   margin: auto;
   position: fixed;
   top: 0;
@@ -29,7 +29,7 @@ body {
   -webkit-animation: loader 3s linear;
           animation: loader 3s linear;
   visibility: hidden;
-  z-index: 20;
+  z-index: 30;
 }
 
 .loader__border {
@@ -57,7 +57,7 @@ body {
   bottom: 0;
   -webkit-animation: loader-border 3s linear;
           animation: loader-border 3s linear;
-  z-index: 10;
+  z-index: 20;
   visibility: hidden;
 }
 
